@@ -17,3 +17,5 @@ site/**/*.mp4
 TAGS
 reference
 Non Prod/*
+
+.jekyll-cache/
