@@ -20,7 +20,7 @@ I've experimented with org-mode a few times and been rebuffed by its steep learn
 This post lays out the basics of my setup and how you might adopt it.
 <br/>
 <br/>
-<img src="/site/ScreenShot.png" style="border:solid; border-width:thin;" alt="Screenshot showing BrainTool with emacs and Chrome views">
+<img src="./site/ScreenShot.png" style="border:solid; border-width:thin;" alt="Screenshot showing BrainTool with emacs and Chrome views">
 <p style="text-align:center; font-weight:bold; font-size:small">Screenshot showing BrainTool with emacs and Chrome views</p>
 
 ## Desktop Setup

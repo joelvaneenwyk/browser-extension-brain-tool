@@ -10,10 +10,10 @@ audience: user
 BrainTool is a 'Topic' Manager for your tabs. Topics are the basic unit of organization. The BrainTool Topic Manager sidepanel shows your topic hierarchy and provides tools for editing and curating your topics. The BrainTool Bookmarker lets you quickly assign a topic and note to any web page or browser resource that you want to keep track of.
 <div class="row">
 <div class="cell left">
-<img src="/site/TopicManager10.png" alt="side-panel" style="border:solid; border-width:thin; width:80%">
+<img src="./site/TopicManager10.png" alt="side-panel" style="border:solid; border-width:thin; width:80%">
 </div>
 <div class="cell right">
-<img src="/site/Bookmarker.png" alt="popup" style="border:solid; border-width:thin; width: 80%">
+<img src="./site/Bookmarker.png" alt="popup" style="border:solid; border-width:thin; width: 80%">
 </div>
 </div>
 
@@ -21,7 +21,7 @@ A topic is a category or a tag or any way you want to group a set of web pages. 
 
 Getting your links and notes into BT is easy, but once there they give you a unique ability to control your browser and navigate your online resources. From the Topic Manager you can open and close individual pages or open all pages for a topic into a tabgroup or new window, as well as see which pages are open and pop any one to the top. Everything is controllable via keyboard commands in addition to the mouse. This ability to navigate sites and tabs from the Topic Manager and control tabs, tabgroups and windows in the browser can greatly improve your browser workflow.
 
-Finally, all of the above takes place in the browser. But BrainTool doesn't want to lock all this valuable information away! Underlying what you see on the screen is a plain text based representation. You can turn on a continuous sync to a local or Google Drive file or manually save versions of your topic map. Beyond just being a backup this allows you to share your topic map across browsers as well as access and edit your notes and links in any text editor. 
+Finally, all of the above takes place in the browser. But BrainTool doesn't want to lock all this valuable information away! Underlying what you see on the screen is a plain text based representation. You can turn on a continuous sync to a local or Google Drive file or manually save versions of your topic map. Beyond just being a backup this allows you to share your topic map across browsers as well as access and edit your notes and links in any text editor.
 
 
 ## Installation
@@ -30,7 +30,7 @@ Finally, all of the above takes place in the browser. But BrainTool doesn't want
 Install BrainTool from the <a href="https://chrome.google.com/webstore/detail/braintool-beyond-bookmark/fialfmcgpibjgdoeodaondepigiiddio">Chrome</a> or <a href="https://microsoftedge.microsoft.com/addons/detail/braintool-beyond-bookma/igibjpnabjgljgnfajjpapocagidmeol">Edge</a> store. You will need to grant permissions for BT to see your browsing history and access your bookmarks. This puts a small extension inside your browser and adds the BT icon. The icon shows on your browser bar or under the generic extension 'puzzle-piece' icon. Pin the icon to your browser bar using the push-pin icon.
 </div>
 <div class="cell right">
-<img src="/site/initialInstall.png" alt="Install" style="border:solid; border-width:thin; width:90%; margin-left:2rem;">
+<img src="./site/initialInstall.png" alt="Install" style="border:solid; border-width:thin; width:90%; margin-left:2rem;">
 </div>
 </div>
 BrainTool is launched by clicking the icon, or using the Alt/Option-b keyboard accelerator. When first launched it will open the Topic Manager and walk through a brief introduction. The Topic Manager comes pre-populated with a small default set of topics. You can add your data into this structure or delete it and create your own. By default BrainTool (BT) launches in an independent sidepanel browser window. Position it wherever works best for you, the Topic Manager will re-open in the position it was last closed from.
@@ -38,12 +38,12 @@ BrainTool is launched by clicking the icon, or using the Alt/Option-b keyboard a
 ## Assigning a Topic - the Bookmarker
 <div class="row">
 <div class="cell left" style="text-align:justify">
-To save the current web page into BrainTool just hit the icon or keyboard accelerator. This will open the BT Bookmarker with the Topic field selected. 
+To save the current web page into BrainTool just hit the icon or keyboard accelerator. This will open the BT Bookmarker with the Topic field selected.
 <br/><br/>
 The topic selector shows an overview of your current topics in a navigable tree. You can select one with your mouse or just start typing. Auto-complete will show possible topic options. Hit enter to select. If BT has a good guess as to the topic it might be pre-populated. In this case either just hit enter to use it, or delete to clear out the suggestion. If you leave the topic blank the default '📝 Scratch' topic will be used.
 </div>
 <div class="cell right">
-<img src="/site/SaverSuggestions10.png" alt="popup" style="border:solid; border-width:thin; width:110%; margin-left:2rem;">
+<img src="./site/SaverSuggestions10.png" alt="popup" style="border:solid; border-width:thin; width:110%; margin-left:2rem;">
 </div>
 </div>
 If a topic name is not unique the auto-complete will show a colon:separated hierarchy. Typing in an unknown topic will create a new one at the top level. Entering an existing topic followed by a colon:subtopic creates a new subtopic under that parent topic (EG Projects:My new project). Topic names can have spaces.
@@ -61,7 +61,7 @@ The Topic Manager shows your topic hierarchy in an expandable table. The small t
 
 Hovering your mouse over a row in the table reveals a set of buttons that perform operations on that row. As shown below, right to left, the operations are as follows:
 
-<img src="/site/rowButtons.png" alt="Row Buttons" style="width:80%; margin-left:5rem;">
+<img src="./site/rowButtons.png" alt="Row Buttons" style="width:80%; margin-left:5rem;">
 - **More/Fewer Tools:** Expand to show the full set of tool buttons, or shrink to show the summary set.
 - **Close:** Close an open tab or all open tabs for a topic.
 - **Open Tab:** Open the page in a tab or all the topics pages in a set of tabs.
@@ -78,7 +78,7 @@ Note not all tools apply to every item and so not all will be shown every time. 
 ## Keyboard Accelerators
 <div class="row">
 <div class="cell left"><br/>
-<img src="/site/Help10.png" alt="Key commands" style="border:solid; border-width:thin; width:90%; margin-right:2rem;">
+<img src="./site/Help10.png" alt="Key commands" style="border:solid; border-width:thin; width:90%; margin-right:2rem;">
 </div>
 <div class="cell right">
 BrainTool is designed to allow you to work more efficiently in your browser. One way of speeding up your work is to use the keyboard accelerators. Accelerators can access all the tools described above, as well as navigating and searching through the tree. Hitting 'h' or '?' will show all the available keyboard commands. BrainTool uses the Alt (PC) or Option (Mac) key as a control key to avoid conflict with other browser keyboard shortcuts.
@@ -106,10 +106,10 @@ There's also a brief demo video on [this blog post]({% post_url 2021-10-06-Contr
 Settings control the configuration of your BrainTool. Actions are system-wide operations. The settings and actions panels can be accessed from the relevant buttons in the top right of the Topic Manager.
 <div class="row">
 <div class="cell left">
-<img src="/site/CollatoralMaterial/Settings.png" alt="side-panel" style="border:solid; border-width:thin; width:80%">
+<img src="./site/CollatoralMaterial/Settings.png" alt="side-panel" style="border:solid; border-width:thin; width:80%">
 </div>
 <div class="cell right">
-<img src="/site/Actions.png" alt="popup" style="border:solid; border-width:thin; width: 80%">
+<img src="./site/Actions.png" alt="popup" style="border:solid; border-width:thin; width: 80%">
 </div>
 </div>
 
@@ -123,7 +123,7 @@ Via the 'Topic Manager Location:' selector you can change the default location o
 
 A controllable option on the panel determines whether BT tabs are grouped by tab groups or opened as individual tabs wherever the browser puts them. The default, Tab Groups, uses the tabgroup functionality in Chrome and Edge (as well as Brave and some other Chromium-based browsers) to give a visual indication in the browser of which tabs are associated with the same topic. Tabgroups can be named and colored by right clicking on the tab group indicator in the browser. The tabgroup will show the corresponding topics name. Dragging tabs into, or out of, the tabgroup will add or remove them from the associated BT Topic.
 
-There is the option to sync your personal braintool topic map to a file on your local machine, or associated with a Google Drive account. If you have a Google account you can walk through an authorization step to allow BT to write all your data into a file you can access via Drive (in addition to saving it in browser storage). Alternatively you can sync to a local file which can then subsequently also be saved to DropBox, github or some other cloud storage. 
+There is the option to sync your personal braintool topic map to a file on your local machine, or associated with a Google Drive account. If you have a Google account you can walk through an authorization step to allow BT to write all your data into a file you can access via Drive (in addition to saving it in browser storage). Alternatively you can sync to a local file which can then subsequently also be saved to DropBox, github or some other cloud storage.
 
 Note that you can only sync to one external file source. With GDrive Google will automatically keep incremental versions of your BrainTool file which can help with recovery if you overwrite or delete your data, whereas the local file will be changed on each update. In either case you should consider periodically exporting your data (via Actions) to save a backup copy.
 
@@ -146,7 +146,7 @@ Finally you have the option to upgrade to a 'Supporter' version of BrainTool bas
 After the 30 day trial period the display customization settings are locked for non supporters and a friendly solicitation  message is shown on startup. See the <a href="../pricing">Pricing</a> page for details.
 </div>
 <div class="cell right">
-<img src="/site/CollatoralMaterial/trialExpired.png" alt="side-panel" style="border:solid; border-width:thin; width:90%">
+<img src="./site/CollatoralMaterial/trialExpired.png" alt="side-panel" style="border:solid; border-width:thin; width:90%">
 </div>
 </div>
 

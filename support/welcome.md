@@ -12,9 +12,9 @@ We're very glad to have you as a new user. This page should help you get up and 
 
 ## Launching BrainTool
 
-Chrome hides new extensions under the jigsaw piece icon on the top right of its window. You can pin the BrainTool icon to your browser toolbar by clicking the puzzle piece and hitting the pin next to the BT icon. 
+Chrome hides new extensions under the jigsaw piece icon on the top right of its window. You can pin the BrainTool icon to your browser toolbar by clicking the puzzle piece and hitting the pin next to the BT icon.
 <br/>
-<img src="/site/initialInstall.png" alt="initial install" style="border:solid; border-width:thin; width:70%;">
+<img src="./site/initialInstall.png" alt="initial install" style="border:solid; border-width:thin; width:70%;">
 
 Launch BrainTool by clicking the toolbar icon or using the Alt/Option-b accelerator key. Initially this creates the Topic Manager window, subsequently it opens the BrainTool Bookmarker tool. The Bookmarker allows you to save the current tab, tabgroup, window, or whole session. The Topic Manager allows you to manage your topics and tabs. Hitting b twice (Opt-b-b), or double clicking the icon, will surface the Topic Manager if it's hidden.
 

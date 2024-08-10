@@ -5,6 +5,8 @@ description: BrainTool is a way of organizing things you want to remember and ge
 audience: landingpage
 ---
 
+<!-- markdownlint-disable MD025 MD033 -->
+
 <h1 style="margin-top: -30px; padding-bottom: 30px; font-size: 2.4em; color: #212c31;">Have a too-many-tabs Problem?</h1>
 <div class="row">
 <div class="cell left" >
@@ -25,27 +27,27 @@ No longer fear closing a tab!
 </div>
 <div class="cell right" >
 
-	  <div class="store-button" style="float:none; margin:auto; ">
+   <div class="store-button" style="float:none; margin:auto; ">
               <div id="store-text" style="margin-bottom:1rem; margin-top:0rem" onclick = "gotoStore()">
-		Add to Chrome
+  Add to Chrome
               </div>
-	  </div>
+   </div>
       <script>
-	    // if edge change button to point to edge store
+     // if edge change button to point to edge store
         let storeLink = "https://chrome.google.com/webstore/detail/braintool/fialfmcgpibjgdoeodaondepigiiddio";
-	    if (navigator.userAgent.indexOf('Edg/') >= 0) {
+     if (navigator.userAgent.indexOf('Edg/') >= 0) {
             storeLink = "https://microsoftedge.microsoft.com/addons/detail/braintool-beyond-bookma/igibjpnabjgljgnfajjpapocagidmeol";
-	        let text = document.getElementById('store-text').firstChild;
-	        text.nodeValue = "Add to Edge";
-	    }
+         let text = document.getElementById('store-text').firstChild;
+         text.nodeValue = "Add to Edge";
+     }
         function gotoStore() {
             (typeof gtag !== 'undefined') && gtag('event', 'Add_to_Click', {'event_category': 'Website', 'event_label': 'landingpage', 'value': 1.0});
             window.location = storeLink;
         }
-	  </script>
-	  
+   </script>
+
 <br/>
-<img src="/media/topicsAndTabs.png" alt="BrainTool sidepanel" style="border:solid; border-width:thin;">
+<img src="./media/topicsAndTabs.png" alt="BrainTool sidepanel" style="border:solid; border-width:thin;">
 </div>
 </div>
 <div class="row">
@@ -55,10 +57,10 @@ No longer fear closing a tab!
 Trivially add a page into your Topic tree and close it out.
 <br/><br/>
 </h3>
-<img src="/media/editCard.png" alt="Card editor" style="border:solid; border-width:thin; ">
+<img src="./media/editCard.png" alt="Card editor" style="border:solid; border-width:thin; ">
 </div>
 <div class="cell right">
-<img src="/media/saver.png" alt="Autocomplete topics" style="border:solid; border-width:thin;">
+<img src="./media/saver.png" alt="Autocomplete topics" style="border:solid; border-width:thin;">
 <br/><br/>
 <h3>
 Or keep detailed notes on the Topic card associated with every item.
@@ -79,7 +81,6 @@ Or keep detailed notes on the Topic card associated with every item.
 </p>
 </div>
 <table style="height:500px; overflow-y:auto">
-
 
 <tr><td style="width:35%"><img src="site/Commendations/bio-21.png" style="width:90%" alt="Chrome Web Store five star review"></td>
 <td style="font-size:small; font-style:italic">It truly feels like the developers KNOW my brain. I checked off every bullet point on my list of needs and then some. I don't know how I ever lived without it.</td></tr>
@@ -180,7 +181,7 @@ With Braintool I have found it.</td></tr>
 </div>
 
 <!--
-<img src="/site/ScreenShot.png" style="border:solid; border-width:thin;" alt="Screenshot showing BrainTool with emacs and Chrome views">
+<img src="./site/ScreenShot.png" style="border:solid; border-width:thin;" alt="Screenshot showing BrainTool with emacs and Chrome views">
 -->
 
 <h1 class="landing-header">More Info</h1>
@@ -188,4 +189,3 @@ With Braintool I have found it.</td></tr>
 <iframe width="500" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhaw8BE1kin0CQFuDXrWsdC6Nzhyo9dix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 -->
 BrainTool is usable for free forever, an optional subscription or one-time purchase unlocks some customizations. See the [Vision Statement](http://braintool.org/overview) for philosophy and roadmap information. There is also an [official privacy policy](./BrainToolPrivacyPolicy.pdf). Or just [download](https://chrome.google.com/webstore/detail/braintool/fialfmcgpibjgdoeodaondepigiiddio) and try it out!
-

@@ -5,7 +5,11 @@ tagline: The Topic Manager for your Online Life
 description: BrainTool goes beyond bookmarks to organize the things you want to remember and get back to. Free and private. Download now!
 audience: nonuser
 ---
+
+<!-- markdownlint-disable MD033 -->
+
 ## BrainTool Vision
+
 While working online you should be able to easily capture and categorize all the tasks, information and knowledge you want to keep track of, get back to it when you need it and edit it as part of your personal information space. Having a system you can trust allows you to close out tabs, avoid distraction and stay focused.
 
 Work these days generally takes place in a proliferation of browser tabs. Increasingly knowledge workers are using task managers and personal knowledge management tools to keep track of notes and tasks and ideas. BrainTool unifies these two information spaces making it easy to organize all of your browseable information resources into a set of related 'Topics' and to capture to-dos and free-form notes on those topics within your personal organizational system.
@@ -13,7 +17,8 @@ Work these days generally takes place in a proliferation of browser tabs. Increa
 The long term vision for BrainTool is to be the tool your brain needs to keep track of all of your information. It will expand to offer a beautiful and satisfying in-place note taking and curation environment, full content search, productivity tools, and content sharing.
 
 ## General Philosophy
-- BrainTool uses *your* data with *your* permission to provide tools to manage, organize and access everything you do in a browser. Your data is stored in a human-readable plain text format that you own and have complete control over. 
+
+- BrainTool uses *your* data with *your* permission to provide tools to manage, organize and access everything you do in a browser. Your data is stored in a human-readable plain text format that you own and have complete control over.
 
 - BrainTool endeavors to be a fantastic standalone tool but also to work well with other text-based workflows and to readily integrate with an ecosystem of information management and productivity tools.
 
@@ -22,22 +27,24 @@ The long term vision for BrainTool is to be the tool your brain needs to keep tr
 - Some companies give software away for free and make money off collecting and selling user data. With a subscription or purchase you are funding BrainTool's development and continued improvement, and keeping your data to yourself.
 
 ## Security
+
 BrainTool is comprised of a browser extension and a JavaScript web application. The app is entirely a static, source-available, client-side app served from [a public software repository](https://github.com/tconfrey/BrainTool). Your data is stored in browser memory or optionally in a file called BrainTool.org, locally, or on your Google Drive. No information is stored or accessible anywhere else. (See also the [official privacy policy.](./BrainToolPrivacyPolicy.pdf))
 
 ## Product Overview
-The BrainTool browser extension is a knowledge/notes/links/browser manager. While browsing use the Bookmarker to assign a Topic to web pages you want to save and optionally add a note. Topics, links and associated notes are stored in your personal braintool file. 
 
-Topics provide a way of organizing your information. Think of BrainTool as the index into your personal information space. Each topic is represented by a node in the tree shown on the BrainTool Topic Manager, and within the browser by a dedicated window or tab group, with tabs for saved links. 
+The BrainTool browser extension is a knowledge/notes/links/browser manager. While browsing use the Bookmarker to assign a Topic to web pages you want to save and optionally add a note. Topics, links and associated notes are stored in your personal braintool file.
+
+Topics provide a way of organizing your information. Think of BrainTool as the index into your personal information space. Each topic is represented by a node in the tree shown on the BrainTool Topic Manager, and within the browser by a dedicated window or tab group, with tabs for saved links.
 
 The Topic Manager is your central controller. With drag and drop and powerful keyboard commands it allows you to organize and annotate your topic tree, and to operate your browser - opening, closing and navigating between tabs and windows with ease.
 <div class="row">
 <div class="cell left" style="width: 80%">
-<img src="/media/ReleaseCandidate-TG.png" alt="Tab Groups">
+<img src="./media/ReleaseCandidate-TG.png" alt="Tab Groups">
 </div>
 </div>
 By organizing links and capturing your notes about them you are mapping your personal information space. BrainTool stores that information space in a plain-text file. As you save pages and add notes a file called BrainTool.org is kept updated. That file is regular text but structured in the public [org-mode](http://orgmode.org) format. The text file can be edited in any text editor but ideally in emacs with org-mode.
 
-<img src="/site/ScreenShot.png" style="border:solid; border-width:thin;" alt="Screenshot showing BrainTool with emacs and Chrome views">
+<img src="./site/ScreenShot.png" style="border:solid; border-width:thin;" alt="Screenshot showing BrainTool with emacs and Chrome views">
 
 <!--
 # <A href="#concepts">Concepts</A>
@@ -54,6 +61,7 @@ Occurrences of information about a topic are the things you save and capture int
 -->
 
 ## Roadmap
+
 There will always be a fully functional, free and open source version of BrainTool with a continuously evolving and improving feature set. After the 1.0 release efforts will be focused on adding premium features and scaling. The following is not intended to be complete or in priority order, [feedback is appreciated](https://groups.google.com/u/0/g/braintool-discussion).
 
 See the 1.0 version of the [Release Notes](support/releaseNotes), the [User Guide](support/UserGuide) and the available [Release Candidate Build](support/localInstall) for current functionality.
@@ -66,5 +74,5 @@ See the 1.0 version of the [Release Notes](support/releaseNotes), the [User Guid
 - **Org Functions**: Org-mode itself provides a good roadmap for BrainTool's potential feature set. Org is a massively functional but highly complex personal organizational tool. BrainTool could provide an intuitive overlay for a subset of Orgs most important functionality - TODO lists, journaling, agendas etc.
 - **Deep Search**: Searching the full text of your links and notes is fully supported. Longer term it will be possible to crawl the actual contents of all of your saved pages, to augment browser search and maybe even to pre-prompt or customize an LLM to provide a conversational interface to your personal information space.
 - **Tags and Bi-Directional Linking**: In addition to containment it should be possible to model other kinds of relationships between topics and to tag information occurrences as being relevant to multiple topics.
-- **Multi-file Support**: It should be possible to save, share and sync individual topic tree files. For example a 'Recipes' topic could point to a dedicated recipes.org file which is loaded on demand and maintained collaboratively. 
+- **Multi-file Support**: It should be possible to save, share and sync individual topic tree files. For example a 'Recipes' topic could point to a dedicated recipes.org file which is loaded on demand and maintained collaboratively.
 - **Topic Tree Repository**: BrainTool will host best-practice topic trees and templates around common areas such as 'Productivity Tools', 'Knowledge Management', 'Wedding Organizer', 'Trip Planner' etc.
