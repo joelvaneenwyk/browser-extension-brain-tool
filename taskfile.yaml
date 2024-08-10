@@ -1,0 +1,129 @@
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  BUILD_DIR_NAME: >-
+    .build
+
+tasks:
+  default:
+    cmds:
+      - task: build
+
+  docs:
+    vars:
+      JEKYLL_VERSION: 4
+    cmds:
+      - cmd: |
+          docker run --rm \
+            --volume="{{.TASKFILE_DIR}}":/srv/jekyll:Z \
+            -it jekyll/jekyll:{{.JEKYLL_VERSION}} \
+            jekyll build
+
+  build:
+    cmds:
+      - task: cmake-build
+      - task: msbuild
+      - task: docs
+
+  clean:
+    cmds:
+      - cmd: rm -rf "{{joinPath .TASKFILE_DIR .BUILD_DIR_NAME}}"
+        platforms: [linux, darwin]
+      - cmd: git clean -xfd
+
+  rebuild:
+    deps: [clean]
+    cmds:
+      - task: build
+
+  create-release:
+    aliases: [mkver]
+    cmds:
+      - cmd: |
+          # bundles up commands to create a new ~/versions subtree. Take in name, eg 0.8.0
+          version="${1:-Release-Candidate}"
+          echo "Creating release folder: './versions/$version'"
+          rm -rf "./versions/$version"
+          mkdir -p "./versions/$version"
+          mkdir -p "./versions/$version/app"
+          mkdir -p "./versions/$version/extension"
+          mkdir -p "./versions/$version/utilities"
+          mkdir -p "./versions/$version/app/resources"
+          mkdir -p "./versions/$version/extension/images"
+          mkdir -p "./versions/$version/extension/resources"
+          mkdir -p "./versions/$version/extension/_locales"
+          mkdir -p "./versions/$version/extension/_locales/de"
+          mkdir -p "./versions/$version/extension/_locales/en"
+          mkdir -p "./versions/$version/extension/_locales/es"
+          mkdir -p "./versions/$version/extension/_locales/fr"
+          mkdir -p "./versions/$version/extension/_locales/ko"
+          cp -rf ./app/* "./versions/$version/app"
+          cp -rf ./extension/* "./versions/$version/extension/"
+          cp -rf ./utilities/* "./versions/$version/utilities/"
+          cp -rf ./app/resources/* "./versions/$version/app/resources"
+          cp -rf ./extension/images/* "./versions/$version/extension/images"
+          cp -rf ./extension/resources/* "./versions/$version/extension/resources"
+          cp -rf ./extension/_locales/* "./versions/$version/extension/_locales"
+          cp -rf ./extension/_locales/de/* "./versions/$version/extension/_locales/de"
+          cp -rf ./extension/_locales/en/* "./versions/$version/extension/_locales/en"
+          cp -rf ./extension/_locales/es/* "./versions/$version/extension/_locales/es"
+          cp -rf ./extension/_locales/fr/* "./versions/$version/extension/_locales/fr"
+          cp -rf ./extension/_locales/ko/* "./versions/$version/extension/_locales/ko"
+
+  run:
+    deps: [cmake-install]
+    vars:
+      RUN_WINDOWS: cmd.exe /D /E:ON /C start "Bespoke Synth DEBUG" /D "{{joinPath .TASKFILE_DIR "bin"}}"
+      RUN_BASH: bash -c
+      RUN: '{{if eq OS "windows"}}{{.RUN_WINDOWS}}{{else}}{{.RUN_BASH}}{{end}}'
+    cmds:
+      - cmd: >-
+          {{.RUN}} "{{joinPath .TASKFILE_DIR .CMAKE_EXE_PATH}}"
+
+  msbuild:
+    aliases: [build, b]
+    platforms: [windows]
+    silent: true
+    vars:
+      SOLUTIONS: >-
+        libs/JUCE/extras/Projucer/Builds/VisualStudio2022/Projucer.sln
+      DEFAULT_CONFIG: Release
+      DEFAULT_PLATFORM: x64
+      DEFAULT_SOLUTION: '{{index (split "\n" .SOLUTIONS) 0}}'
+      MSBUILD:
+        sh: | # shell
+          strings=("Preview" "Enterprise" "Professional" "Community")
+          for str in "${strings[@]}"
+          do
+            result="C:/Program Files/Microsoft Visual Studio/2022/${str}/MSBuild/Current/Bin/amd64/MSBuild.exe"
+            if [ -e "$result" ]; then
+              echo "$result"
+              break
+            fi
+          done
+      MSBUILD_CONFIG: "{{ .CONFIG | default .DEFAULT_CONFIG }}"
+      MSBUILD_SOLUTION: "{{ joinPath .TASKFILE_DIR (.SOLUTION | default .DEFAULT_SOLUTION) }}"
+      MSBUILD_PLATFORM: "{{ .PLATFORM | default .DEFAULT_PLATFORM }}"
+    cmds:
+      - cmd: echo "Building '{{ .MSBUILD_SOLUTION }}' with '{{ .MSBUILD_CONFIG }}' configuration."
+      - cmd: >-
+          "{{fromSlash .MSBUILD}}"
+          /m
+          /t:Build
+          /p:Configuration="{{.MSBUILD_CONFIG}}"
+          /p:Platform="{{.MSBUILD_PLATFORM}}"
+          "{{fromSlash .MSBUILD_SOLUTION}}"
+
+  git-submodule-init:
+    status:
+      - test -f libs/ableton-link/README.md
+    sources:
+      - .gitmodules
+    generates:
+      - libs/ableton-link/README.md
+    cmds:
+      - cmd: |
+          git -C "{{.TASKFILE_DIR}}" submodule update --init --recursive
