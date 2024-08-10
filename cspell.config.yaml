@@ -1,0 +1,11 @@
+version: "0.2"
+ignorePaths: []
+dictionaryDefinitions:
+  - name: brain-tool
+    path: ./.github/config/brain-tool.dict
+    addWords: true
+dictionaries:
+  - brain-tool
+words: []
+ignoreWords: []
+import: []
