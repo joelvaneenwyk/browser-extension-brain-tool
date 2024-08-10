@@ -6,7 +6,10 @@ description: Go beyond bookmarks with BrainTool, a better way of organizing thin
 audience: nonuser
 ---
 
-# Special One-Time Offers!
+<!-- markdownlint-disable MD025 MD033 -->
+
+# Special One-Time Offers
+
 In celebration of the 1.0 BrainTool release a free permanent license is being offered to any existing user who contributes to it's success by performing any of the following<sup>*</sup>:
 <!-- - Filling out this survey:[link] -->
 - Posting an honest, positive review or mention on a social network feed<sup>**</sup>, newsletter, blog post, app store review, etc.
@@ -15,7 +18,7 @@ In celebration of the 1.0 BrainTool release a free permanent license is being of
 
 If you'd prefer to just pay and/or want to show support, please do go ahead and purchase a license. In return you can make use of the BTEarlyFinancer coupon code to receive 50% off.
 <p style="font-size:0.8rem; font-style: italic; margin-top:0px;">*&nbsp;&nbsp; Send a link showing the post to braintool.extension@gmail.com</p>
-<p style="font-size:0.8rem; font-style: italic; margin-top:-10px;">** See @ABrainTool on 
+<p style="font-size:0.8rem; font-style: italic; margin-top:-10px;">** See @ABrainTool on
 <a href="https://twitter.com/ABraintool">Twitter</a>, <a href="https://www.instagram.com/abraintool/">Instagram</a> and <a href="https://facebook.com/ABrainTool">FaceBook</a></p>
 # BrainTool Pricing and Data Philosophy
 There's been a trend for the last while to give software away for free and make money off of the data you can collect and sell. BrainTool strives to take a completely hands off approach to your data. Your data is yours, BrainTool uses it with your permission to provide you tools to manage, organize and access it. With a subscription or purchase you are paying for those tools and their continued improvement, and keeping your data to yourself.
@@ -23,7 +26,9 @@ There's been a trend for the last while to give software away for free and make 
 The fully-functional free version and current low pricing are designed to encourage broad adoption. See the [vision and overview](overview) page for more details.
 
 <i><small>NB the previous 0.9.9 Store version of the extension had different, higher, subscription costs but had no enforcement or non-free features. Based on input received the pricing has been reduced and a one-time purchase option added</small></i>
+
 # Pricing
+
 <div class="row">
 <div class="cell left" style="padding-right: 30px;">
 <h2>Non-Supporter</h2>
@@ -41,7 +46,7 @@ Import-from and export-to local text file in readable <a href='http://orgmode.or
 Optional continuous sync to Google Drive or local file (again in plain text).
 </p>
 <p>
-Full text search on links, descriptions and notes. 
+Full text search on links, descriptions and notes.
 </p>
 <p>
 To-Do/Done annotations.
