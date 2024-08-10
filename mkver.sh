@@ -1,30 +1,32 @@
 #!/bin/sh
 # bundles up commands to create a new ~/versions subtree. Take in name, eg 0.8.0
-echo creating versions/$1
-mkdir versions/$1
-mkdir versions/$1/app
-mkdir versions/$1/extension
-mkdir versions/$1/utilities
-mkdir versions/$1/app/resources
-mkdir versions/$1/extension/images
-mkdir versions/$1/extension/resources
-mkdir versions/$1/extension/_locales
-mkdir versions/$1/extension/_locales/de
-mkdir versions/$1/extension/_locales/en
-mkdir versions/$1/extension/_locales/es
-mkdir versions/$1/extension/_locales/fr
-mkdir versions/$1/extension/_locales/ko
-cp app/* versions/$1/app
-cp extension/* versions/$1/extension/
-cp utilities/* versions/$1/utilities/
-cp app/resources/* versions/$1/app/resources
-cp extension/images/* versions/$1/extension/images
-cp extension/resources/* versions/$1/extension/resources
-cp extension/_locales/* versions/$1/extension/_locales
-cp extension/_locales/de/* versions/$1/extension/_locales/de
-cp extension/_locales/en/* versions/$1/extension/_locales/en
-cp extension/_locales/es/* versions/$1/extension/_locales/es
-cp extension/_locales/fr/* versions/$1/extension/_locales/fr
-cp extension/_locales/ko/* versions/$1/extension/_locales/ko
+version="${1:-Release-Candidate}"
+echo "Creating release folder: './versions/$version'"
+rm -rf "./versions/$version"
+mkdir -p "./versions/$version"
+mkdir -p "./versions/$version/app"
+mkdir -p "./versions/$version/extension"
+mkdir -p "./versions/$version/utilities"
+mkdir -p "./versions/$version/app/resources"
+mkdir -p "./versions/$version/extension/images"
+mkdir -p "./versions/$version/extension/resources"
+mkdir -p "./versions/$version/extension/_locales"
+mkdir -p "./versions/$version/extension/_locales/de"
+mkdir -p "./versions/$version/extension/_locales/en"
+mkdir -p "./versions/$version/extension/_locales/es"
+mkdir -p "./versions/$version/extension/_locales/fr"
+mkdir -p "./versions/$version/extension/_locales/ko"
+cp -rf ./app/* "./versions/$version/app"
+cp -rf ./extension/* "./versions/$version/extension/"
+cp -rf ./utilities/* "./versions/$version/utilities/"
+cp -rf ./app/resources/* "./versions/$version/app/resources"
+cp -rf ./extension/images/* "./versions/$version/extension/images"
+cp -rf ./extension/resources/* "./versions/$version/extension/resources"
+cp -rf ./extension/_locales/* "./versions/$version/extension/_locales"
+cp -rf ./extension/_locales/de/* "./versions/$version/extension/_locales/de"
+cp -rf ./extension/_locales/en/* "./versions/$version/extension/_locales/en"
+cp -rf ./extension/_locales/es/* "./versions/$version/extension/_locales/es"
+cp -rf ./extension/_locales/fr/* "./versions/$version/extension/_locales/fr"
+cp -rf ./extension/_locales/ko/* "./versions/$version/extension/_locales/ko"
 
 echo "Don't forget to update the manifest and popup files to point to the right version!"
