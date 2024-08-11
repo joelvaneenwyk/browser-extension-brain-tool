@@ -188,4 +188,4 @@ With Braintool I have found it.</td></tr>
 <!--
 <iframe width="500" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhaw8BE1kin0CQFuDXrWsdC6Nzhyo9dix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 -->
-BrainTool is usable for free forever, an optional subscription or one-time purchase unlocks some customizations. See the [Vision Statement](http://braintool.org/overview) for philosophy and roadmap information. There is also an [official privacy policy](./BrainToolPrivacyPolicy.pdf). Or just [download](https://chrome.google.com/webstore/detail/braintool/fialfmcgpibjgdoeodaondepigiiddio) and try it out!
+BrainTool is usable for free forever, an optional subscription or one-time purchase unlocks some customizations. See the [Vision Statement](http://braintool.org/overview) for philosophy and roadmap information. There is also an [official privacy policy](./docs/BrainToolPrivacyPolicy.pdf). Or just [download](https://chrome.google.com/webstore/detail/braintool/fialfmcgpibjgdoeodaondepigiiddio) and try it out!

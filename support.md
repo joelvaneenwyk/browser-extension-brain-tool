@@ -7,11 +7,12 @@ audience: user
 ---
 
 # Information Sources
-- The BrainTool [User Guide](/support/userGuide) gives a step by step intro to using BT.
+
+- The BrainTool [User Guide](./support/userGuide) gives a step by step intro to using BT.
 - The BrainTool [Overview page](https://braintool.org/overview) discusses philosophy and direction.
 - Here's a [playlist of short videos](https://youtu.be/g_843PjL8s8?list=PLhaw8BE1kin0CQFuDXrWsdC6Nzhyo9dix). They walk through the complete set of BrainTool features (note that the first one is more of an ad).
 - You can post to the [BrainTool Discussion Group](https://groups.google.com/u/2/g/braintool-discussion) with feedback or questions.
-- There's also the [Welcome](/support/welcome) page and the [Release Notes](/support/releaseNotes).
+- There's also the [Welcome](./support/welcome) page and the [Release Notes](./support/releaseNotes).
 - And some other relevant stuff on the [blog](https://braintool.org/posts.html).
 
 # Common BrainTool Problems
@@ -24,10 +25,10 @@ By default Chrome hides installed extensions under the little jigsaw piece icon 
 Google uses what are called 'third-party cookies' to store account information and a popup to ask for your permission. Increasingly browsers default ot not allowing popups and cookies. You need to allow popups from accounts.google.com and braintool.org and allow cookies from accounts.google.com in your Chrome settings. Doing so and restarting BrainTool should solve the problem. (NB do not click the box titled 'Including Third-party cookies on this site'.)
 
 ## After clicking Authorize GDrive nothing happens
-Related to the above, some security and privacy related extensions stop web pages from sending messages to third party sites, in some cases I cannot catch this as an error. Privacy Badger is an example of such an extension. You will need to disable such extensions for the braintool.org url. 
+Related to the above, some security and privacy related extensions stop web pages from sending messages to third party sites, in some cases I cannot catch this as an error. Privacy Badger is an example of such an extension. You will need to disable such extensions for the braintool.org url.
 
 ## I use two computers and don't see my changes on the second one
-As noted above, your braintool data is stored in the browser and optionally on Google Drive in a file associated with your Google account (the file is called BrainTool.org, you can see it by visiting [drive.google.com](https://drive.google.com)). Thus you will have a single such file across any set of computers you use. If you have BrainTool running simultaneously on multiple computers you need to use the Refresh button (under Options) to reload the latest version of the file when you swap between computers. 
+As noted above, your braintool data is stored in the browser and optionally on Google Drive in a file associated with your Google account (the file is called BrainTool.org, you can see it by visiting [drive.google.com](https://drive.google.com)). Thus you will have a single such file across any set of computers you use. If you have BrainTool running simultaneously on multiple computers you need to use the Refresh button (under Options) to reload the latest version of the file when you swap between computers.
 
 # Some other problem
 Email braintool.extension@gmail.com or post to the [BrainTool Discussion Group](https://groups.google.com/u/2/g/braintool-discussion) with feedback.

@@ -28,11 +28,11 @@ The long term vision for BrainTool is to be the tool your brain needs to keep tr
 
 ## Security
 
-BrainTool is comprised of a browser extension and a JavaScript web application. The app is entirely a static, source-available, client-side app served from [a public software repository](https://github.com/tconfrey/BrainTool). Your data is stored in browser memory or optionally in a file called BrainTool.org, locally, or on your Google Drive. No information is stored or accessible anywhere else. (See also the [official privacy policy.](./BrainToolPrivacyPolicy.pdf))
+BrainTool is comprised of a browser extension and a JavaScript web application. The app is entirely a static, source-available, client-side app served from [a public software repository](./README.md). Your data is stored in browser memory or optionally in a file stored at `BrainTool.org`, locally, or on your Google Drive. No information is stored or accessible anywhere else. See also the [official privacy policy](./docs/BrainToolPrivacyPolicy.pdf).
 
 ## Product Overview
 
-The BrainTool browser extension is a knowledge/notes/links/browser manager. While browsing use the Bookmarker to assign a Topic to web pages you want to save and optionally add a note. Topics, links and associated notes are stored in your personal braintool file.
+The `BrainTool` browser extension is a knowledge/notes/links/browser manager. While browsing use the `Bookmarker` to assign a `Topic` to web pages you want to save and optionally add a note. Topics, links and associated notes are stored in your personal braintool file.
 
 Topics provide a way of organizing your information. Think of BrainTool as the index into your personal information space. Each topic is represented by a node in the tree shown on the BrainTool Topic Manager, and within the browser by a dedicated window or tab group, with tabs for saved links.
 

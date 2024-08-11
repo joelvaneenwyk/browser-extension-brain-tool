@@ -55,6 +55,6 @@ All your data is stored on your Google Drive in a plain text file that can be se
 
 Check it out on the [Chrome Web Store](https://chrome.google.com/webstore/detail/braintool/fialfmcgpibjgdoeodaondepigiiddio) or ping me at <braintool.extension@gmail.com> .
 
-There's more info in the [Overview](http://braintool.org/overview) and the required official privacy policy is [here](./BrainToolPrivacyPolicy.pdf). Let me know if you have any thoughts, comments, or feedback: [braintool.extension@gmail.com](mailto:braintool.extension@gmail.com).
+There's more info in the [Overview](http://braintool.org/overview) and the required official privacy policy is [here](./docs/BrainToolPrivacyPolicy.pdf). Let me know if you have any thoughts, comments, or feedback: [braintool.extension@gmail.com](mailto:braintool.extension@gmail.com).
 
 Tony
